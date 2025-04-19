@@ -2,7 +2,7 @@
  * @name Chillax
  * @author Chillax Squad
  * @authorLink https://github.com/warrayquipsome/Chillax#Authors
- * @version 2.1.0
+ * @version 2.0.0
  * @invite DrfX6286kF
  * @description The theme where calm meets customization.
  * @source https://github.com/warrayquipsome/Chillax
@@ -21,25 +21,16 @@
 */
 
 /* CHILLAX theme entry point */
-@import url("https://warrayquipsome.github.io/Chillax/chillax.css");
-
-/* removable addons */
+@import url("http://127.0.0.2/chillax.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
 @import url("https://chillax-org.github.io/Discolored/main.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/IconPackEdited.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/AvatarOnlyMemberList.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css");
-@import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/FriendGrid.css");
+@import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/ColoredLinks.css");
-
-/*additional addons*/ /*(remove the both * to use)*/
-/*use the below css if you are experiencing lag (remove the both * to use)*/
-/*@import url("https://warrayquipsome.github.io/Chillax/Addons/SimpleLessLag.css");*/
-/* To hide annoying elements such as nitro, shop, sticker picker etc tab (remove the both * to use)*/
-/*@import url("https://warrayquipsome.github.io/Chillax/Addons/HideAnnoyingElements.css");*/
-
 
 /*Chillax Roots*/
 :root {
@@ -49,8 +40,8 @@
     /*bg dev suggestions*/
     --wallpaper: url("https://wallpaperaccess.com/full/2799204.jpg");
     /*modern background selection*/
-    --modern-dark-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-dark-bg.png");
-    --modern-light-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-light-bg.png");
+    /*--modern-dark-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-dark-bg.png");
+    --modern-light-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-light-bg.png");*/
 }
 
 
@@ -75,7 +66,7 @@
 
 /*roots*/ /*both dark and light*/
 :root {
-    --user-name: "King";
+    --user-name: "Wolf_Fr3";
     --edited-message: " EDITED ✎ ";
     --font-name: Poppins;
     --font-size: 13px;
@@ -177,6 +168,70 @@
     --activity-card-background: transparent;
     --deprecated-panel-background: transparent;
 }
+
+/* re-creates old chillax floating user contorls */
+/* change them however you like */
+/* if you change the width or stuff you will have to adjust accordingly */
+html.theme-dark .panels_c48ade {
+    max-height: 165px;
+    max-width: 340px;
+    left: 75px;
+    border-radius: 15px;
+}
+
+.avatarWrapper__37e49:hover {
+    min-width: 270px;
+    max-width: 250px;
+}
+
+/* Hide all immediate children */
+.buttons__37e49 > * {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+/* Make the last child (settings icon) visible by default */
+.buttons__37e49 > :nth-last-child(2) {
+  opacity: 1;
+}
+
+/* When hovering over the container, show all children */
+.buttons__37e49:hover > * {
+  opacity: 1;
+}
+
+.visual-refresh .wrapper_ef3116 {
+    margin-bottom: 0px;
+}
+
+.visual-refresh .unreadMentionsFixedFooter_ef3116 
+{
+    bottom: 80px;
+}
+
+.stack_dbd263{
+    gap: 5px !important;
+}
+
+.childWrapper__6e9f8 img {
+    content: url("https://cdn.discordapp.com/icons/894172496708919337/a_c3c7c66fe723f8216be2909396371736.gif?size=512");
+}
+
+.childWrapper__6e9f8, childWrapperNoHoverBg__6e9f8 {
+    background-color: transparent !important;
+}
+
+.childWrapper__6e9f8 svg {
+    display: none;
+}
+
+.visual-refresh .channelTextArea_f75fb0 {
+    background-color: #181A1D !important;
+}
+
+/*.childWrapper__6e9f8  {
+    content: url("https://cdn.discordapp.com/icons/894172496708919337/a_c3c7c66fe723f8216be2909396371736.gif?size=512");
+}*/
 
 /*!*friends grid banner colour*!*/
 /*.theme-dark {*/
